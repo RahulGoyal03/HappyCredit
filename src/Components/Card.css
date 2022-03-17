@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-  #dataset > div {
+  #dataset {
     /* margin-top: 10%; */
     display: grid;
     grid-template-columns: 5% 5%;

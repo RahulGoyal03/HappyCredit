@@ -6,6 +6,8 @@ export const Category = ({ filtercatergor, discountsort, fetchOffers }) => {
   let [firstcheck, setfirst] = useState(false);
   let [secondcheck, setsecond] = useState(false);
   const [btnstyle, setbtnstyle] = useState("showarrow");
+
+  // ________show-silter option_______________
   const handleBtn = () => {
     if (btnsign === "^") {
       setbtn("˅");
@@ -15,9 +17,12 @@ export const Category = ({ filtercatergor, discountsort, fetchOffers }) => {
       setbtnstyle("noarrow");
     }
   };
+  // __________filter-category____________
   const sendcategory = (value) => {
     filtercatergor(value.innerHTML);
   };
+
+  // __________________discount_____________________
   const showvla1 = () => {
     setfirst(!firstcheck);
     if (!firstcheck) {

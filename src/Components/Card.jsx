@@ -8,6 +8,25 @@ export const Card = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState([]);
 
+
+  // __________________________media query_______________________________________
+  // const [matches, setMatches] = useState(
+  //   window.matchMedia("(min-width: 768px)").matches
+  // )
+
+  // useEffect(() => {
+  //   window
+  //   .matchMedia("(min-width: 768px)")
+  //   .addEventListener('change', e => setMatches( e.matches ));
+  // }, []);
+  // console.log(matches)
+
+
+
+
+
+
+  // ____________________fetch-data___________________________________
   useEffect(() => {
     fetchOffers();
   }, []);
@@ -31,6 +50,9 @@ export const Card = () => {
     handleOpen();
   };
   // console.log(data);
+
+
+  // _____________________________filter-data_______________________________________
 
   const filtercatergor = async (filtercatgory) => {
     let letter = filtercatgory.toLowerCase();
@@ -58,6 +80,10 @@ export const Card = () => {
         );
     }
   };
+
+
+
+  // _________________________filter-by-discount_____________________________________________
   const discountsort = async (discountt) => {
     if (discountt === "<50") {
       const baseURL =
