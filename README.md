@@ -32,7 +32,8 @@ https://happycreditoffers.herokuapp.com/offers
 
 
 # LightHouse Report
-![Screenshot (141)](https://user-images.githubusercontent.com/91531231/158881748-b2e34bae-63b1-44a8-a4d4-174d54e6eb32.png)
+
+![Screenshot (142)](https://user-images.githubusercontent.com/91531231/158883939-c9c9f407-b2ce-42cd-a1a0-f19cb7ed6c85.png)
 
 
 
